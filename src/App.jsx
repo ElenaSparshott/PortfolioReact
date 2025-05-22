@@ -1,4 +1,5 @@
 import { BrowerRouter } from 'react-router-dom';
+import { NotFound } from './pages/NotFound';
 
 function App() {
    return (
@@ -6,7 +7,7 @@ function App() {
       <BrowerRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="*" />
+          <Route path="*" element={<NotFound />}/>
         </Routes>
       </BrowerRouter>
     </>
