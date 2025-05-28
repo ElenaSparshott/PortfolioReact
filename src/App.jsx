@@ -1,15 +1,16 @@
-import { BrowerRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
 import { NotFound } from './pages/NotFound';
 
 function App() {
    return (
     <>
-      <BrowerRouter>
+      <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path="*" element={<NotFound />}/>
         </Routes>
-      </BrowerRouter>
+      </BrowserRouter>
     </>
   )
 }
